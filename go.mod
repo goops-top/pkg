@@ -1,4 +1,4 @@
-module pkg
+module github.com/goops-top/pkg
 
 go 1.15
 

@@ -39,7 +39,7 @@ func Test_Request(t *testing.T) {
 }
 
 func Test_Post(t *testing.T) {
-	req := NewRequest("http://soul-data-metadata.c.goops.top/user/getUserInfo")
+	req := NewRequest("http://data-metadata.c.goops.top/user/getUserInfo")
 	//req.SetUri("")
 	fmt.Println(req.GetURL())
 	// name/departmentName/email/mobile 是一个动态参数
@@ -59,7 +59,7 @@ func Test_Post(t *testing.T) {
 }
 
 func Test_Head(t *testing.T) {
-	req := NewRequest("http://soul-data-metadata.c.goops.top/user/getUserInfo")
+	req := NewRequest("http://data-metadata.c.goops.top/user/getUserInfo")
 	headErr := req.Head()
 
 	if headErr != nil {
